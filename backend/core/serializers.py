@@ -5,7 +5,7 @@ from rest_framework.fields import CharField, EmailField
 
 class ContactSerializer(serializers.ModelSerializer):
 
-    name = CharField(soucre='title', required=True)
+    name = CharField(source='title', required=True)
     message = CharField(source='description',required=True)
     email = EmailField(required=True)
 
